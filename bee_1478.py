@@ -1,5 +1,5 @@
 while True:
-    n = int(input())
+    n = int(input(''))
 
     if n == 0:
         break
@@ -8,8 +8,8 @@ while True:
         linha = []
 
         for j in range(n):
-            linha.append(f"{min(i+1, j+1, n - i, n - j):3}")
+            linha.append(f"{max(i - j + 1, j - i + 1):3}")
 
-        print('   '.join(linha))
+        print(' '.join(linha))
 
     print()
